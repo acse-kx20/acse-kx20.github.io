@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0bc9d246ea6c4088bb22093b13e52ff9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0bc9d246ea6c4088bb22093b13e52ff9" ></div>
+        
+</body>
+<script>    
+    
+            var map_0bc9d246ea6c4088bb22093b13e52ff9 = L.map(
+                "map_0bc9d246ea6c4088bb22093b13e52ff9",
+                {
+                    center: [51.2, 0.7],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+
+            
+
+        
+    
+            var tile_layer_14f205915c0e491a935fd87aa5861215 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/kx20/ckju4dktc0ywi1apphrzxztny/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3gyMCIsImEiOiJja2p1MXp0aDkwMm1lMnJtc2Jpdnd2eXZtIn0.rfxWFJUSyKaOk4rNBNlnFA",
+                {"attribution": "pk.eyJ1Ijoia3gyMCIsImEiOiJja2p1MXp0aDkwMm1lMnJtc2Jpdnd2eXZtIn0.rfxWFJUSyKaOk4rNBNlnFA", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            var marker_8030c453b0d2471b93ae579f34badaeb = L.marker(
+                [51.8, -0.8],
+                {}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            var icon_855e4b847b63466ebd6275ca25e5de54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8030c453b0d2471b93ae579f34badaeb.setIcon(icon_855e4b847b63466ebd6275ca25e5de54);
+        
+    
+        var popup_f1cf8bb342434a60bf856cb55a75a70d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_780c95d5ab674a04958f63ff7d88ecd0 = $(`<div id="html_780c95d5ab674a04958f63ff7d88ecd0" style="width: 100.0%; height: 100.0%;">Latitude: 51.8 Longitude: -0.8</div>`)[0];
+            popup_f1cf8bb342434a60bf856cb55a75a70d.setContent(html_780c95d5ab674a04958f63ff7d88ecd0);
+        
+
+        marker_8030c453b0d2471b93ae579f34badaeb.bindPopup(popup_f1cf8bb342434a60bf856cb55a75a70d)
+        ;
+
+        
+    
+    
+            marker_8030c453b0d2471b93ae579f34badaeb.bindTooltip(
+                `<div>
+                     Meteoroid Enters the Atmosphere
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3fb65a383794442acdccbd64d0f8c7a = L.marker(
+                [51.2, 0.7],
+                {}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            var icon_5962edc67e9a414fae1092abfa1cf196 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "certificate", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3fb65a383794442acdccbd64d0f8c7a.setIcon(icon_5962edc67e9a414fae1092abfa1cf196);
+        
+    
+        var popup_cabaf901875d46d7b7892bfc2baa1620 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_997cc2bb60c846c49f2289cbe8b25af9 = $(`<div id="html_997cc2bb60c846c49f2289cbe8b25af9" style="width: 100.0%; height: 100.0%;">Latitude: 51.2 Longitude: 0.7</div>`)[0];
+            popup_cabaf901875d46d7b7892bfc2baa1620.setContent(html_997cc2bb60c846c49f2289cbe8b25af9);
+        
+
+        marker_f3fb65a383794442acdccbd64d0f8c7a.bindPopup(popup_cabaf901875d46d7b7892bfc2baa1620)
+        ;
+
+        
+    
+    
+            marker_f3fb65a383794442acdccbd64d0f8c7a.bindTooltip(
+                `<div>
+                     Surface Zero Location
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6ca2157af57d4e51bb983190e57576fb = L.circle(
+                [51.2, 0.7],
+                {"bubblingMouseEvents": true, "color": "#feb24c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feb24c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80000.0, "stroke": true, "weight": 3}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            circle_6ca2157af57d4e51bb983190e57576fb.bindTooltip(
+                `<div>
+                     Damage Level 1: ~10% glass windows shatter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_621285933f9a4ffc8bb7a8dff36cc686 = L.circle(
+                [51.2, 0.7],
+                {"bubblingMouseEvents": true, "color": "#fd8d3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd8d3c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40000.0, "stroke": true, "weight": 3}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            circle_621285933f9a4ffc8bb7a8dff36cc686.bindTooltip(
+                `<div>
+                     Damage Level 2: ~90% glass windows shatter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b6f56b82445344ce9801bcbee71a9ebf = L.circle(
+                [51.2, 0.7],
+                {"bubblingMouseEvents": true, "color": "#fc4e2a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fc4e2a", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000.0, "stroke": true, "weight": 3}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            circle_b6f56b82445344ce9801bcbee71a9ebf.bindTooltip(
+                `<div>
+                     Damage Level 3: Wood frame buildings collapse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1ccb81db0abb42d6b095dcbeebec7cf1 = L.circle(
+                [51.2, 0.7],
+                {"bubblingMouseEvents": true, "color": "#e31a1c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e31a1c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            circle_1ccb81db0abb42d6b095dcbeebec7cf1.bindTooltip(
+                `<div>
+                     Damage Level 4: Multistory brick buildings collapse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d51955bf87d49bf99cf072abcb5427e = L.polyline(
+                [[51.8, -0.8], [51.2, 0.7]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0bc9d246ea6c4088bb22093b13e52ff9);
+        
+    
+            poly_line_8d51955bf87d49bf99cf072abcb5427e.bindTooltip(
+                `<div>
+                     Path of Meteoroid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+                var lat_lng_popup_e88cb41906d148318ad4dbe4c2f8c67f = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_e88cb41906d148318ad4dbe4c2f8c67f
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_0bc9d246ea6c4088bb22093b13e52ff9);
+                    }
+                map_0bc9d246ea6c4088bb22093b13e52ff9.on('click', latLngPop);
+            
+</script>
